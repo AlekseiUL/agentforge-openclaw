@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.jpg" alt="AgentForge" width="100%">
+</p>
+
 # AgentForge for OpenClaw 🔧
 
 > **v2.0** (2026-03-09) — 9-step agent pipeline with 4-level memory, self-improvement system, team alignment
