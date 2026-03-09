@@ -19,8 +19,8 @@ description: "Создание, улучшение и аудит скиллов 
 
 ### Агент за 5 минут:
 1. Добавить в `agents.list[]` в openclaw.json (id, name, model, workspace, tools.deny)
-2. `mkdir workspace` + `AGENTS.md` с ролью
-3. `launchctl kickstart -k gui/$(id -u)/ai.openclaw.gateway`
+2. `mkdir -p ~/.openclaw/agents/<id>/agent` + `AGENTS.md` с ролью
+3. Перезапустить gateway (через config.patch или `openclaw gateway restart`)
 
 **Нужно по шагам? Читай дальше.**
 
@@ -67,12 +67,11 @@ description: "Создание, улучшение и аудит скиллов 
 
 ### Шаг 4. Инициализация
 
-Новый скилл с нуля (опционально):
+Просто создай папку и SKILL.md вручную:
 ```bash
-python3 $(npm root -g)/openclaw/skills/skill-creator/scripts/init_skill.py <name> --path ~/skills/
+mkdir -p skills/<имя>/
 ```
-
-Или просто создать папку и SKILL.md вручную - оба варианта ок.
+Если установлен скилл skill-creator, можно автоматически: `python3 $(npm root -g)/openclaw/skills/skill-creator/scripts/init_skill.py <name> --path ~/skills/`
 
 ### Шаг 5. Написание SKILL.md
 
@@ -338,8 +337,8 @@ openclaw status
 cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak
 ```
 
-**Перезапуск через gateway tool** (config.patch автоматически рестартит).
-⚠️ НЕ `openclaw gateway restart` из сессии агента!
+**Перезапуск:** `openclaw gateway restart` из терминала, или через gateway tool (config.patch автоматически рестартит).
+⚠️ Если агент сам перезапустит gateway — он убьёт свою сессию. Перезапуск только из терминала или через координатора.
 
 **Если не поднялся - откат:**
 ```bash
