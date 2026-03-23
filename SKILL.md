@@ -209,7 +209,10 @@ SKILL.md → SKILL-public.md → убрать личное → аудит пов
 ### Шаг 3. Связи
 
 ```json
-"agentToAgent": { "enabled": true, "allow": ["main", "<agent-id>"] }
+# В openclaw.json → секция "tools" (НЕ в agents!):
+"tools": {
+  "agentToAgent": { "enabled": true, "allow": ["main", "<agent-id>"] }
+}
 ```
 `sessions_send` ВСЕГДА с `timeoutSeconds=0`.
 
