@@ -85,7 +85,7 @@ mkdir -p <workspace>/skills/agent-forge/references
 cp SKILL.md <workspace>/skills/agent-forge/
 cp references/agent-templates.md <workspace>/skills/agent-forge/references/
 
-# 2. Restart
+# 2. Restart the gateway (from terminal, not through agent)
 openclaw gateway restart
 ```
 

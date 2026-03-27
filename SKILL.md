@@ -340,11 +340,16 @@ openclaw status
 cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak
 ```
 
-**Перезапуск:** `openclaw gateway restart` из терминала, или через gateway tool (config.patch автоматически рестартит).
-⚠️ Если агент сам перезапустит gateway — он убьёт свою сессию. Перезапуск только из терминала или через координатора.
+**Перезапуск:** Рекомендуется через OpenClaw CLI или gateway tool с config.patch (автоматический restart).
+
+⚠️ **ВАЖНО:**
+- Агент НЕ должен сам вызывать `openclaw gateway restart` напрямую - это убьёт его сессию
+- Используйте gateway tool с config.patch для изменений конфига
+- Если нужен перезапуск вручную - делайте из отдельного терминала
 
 **Если не поднялся - откат:**
 ```bash
+# Из терминала (НЕ через агента!)
 cp ~/.openclaw/openclaw.json.bak ~/.openclaw/openclaw.json
 openclaw gateway restart
 ```
