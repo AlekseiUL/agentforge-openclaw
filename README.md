@@ -8,6 +8,17 @@
 
 Create skills and agents for OpenClaw. Full pipeline from idea to production-ready agent.
 
+## Canonical source
+
+This project is maintained by Aleksei Ulianov / Sprut_AI.
+Original repository: https://github.com/AlekseiUL/agentforge-openclaw
+
+If you found this project mirrored, repackaged, or redistributed elsewhere, check this repository as the source of truth.
+
+## Attribution
+
+Where permitted by the applicable license, if you reuse, fork, modify, package, or publish this work, keep the original copyright and license notice and link back to the canonical repository.
+
 ## Why
 
 Most people create an agent by writing one AGENTS.md file and calling it done. Then they wonder why the agent gives generic answers, doesn't know who they are, forgets everything after context reset, and feels like a new hire on day one — every single time.
