@@ -25,6 +25,17 @@ Most people create an agent by writing one AGENTS.md file and calling it done. T
 
 AgentForge codifies real battle-tested experience with dozens of skills and agents into a step-by-step process with checklists and templates.
 
+## Who is this for?
+
+AgentForge is for OpenClaw builders who want repeatable agent and skill creation instead of one-off prompt files:
+
+- creators building reusable OpenClaw skills;
+- operators designing specialist agents with memory, tools, and handoff rules;
+- teams that need checklists, templates, and pitfalls before shipping an agent;
+- maintainers upgrading existing agents without losing identity or context.
+
+It is not a generic chatbot prompt pack. It is a production checklist for agent workspaces.
+
 ## Three Modes
 
 | Mode | What it does | Steps |
@@ -162,7 +173,7 @@ I build and improve my own agent system daily. Everything I learn, every new ski
 
 ## License
 
-© 2026 Aleksei Ulianov. Free for personal use. Commercial use and redistribution without author's permission is prohibited.
+MIT License. Copyright (c) 2026 Aleksei Ulianov / Sprut_AI.
 
 ---
 
@@ -319,7 +330,7 @@ openclaw gateway restart
 
 ## Лицензия
 
-© 2026 Алексей Ульянов. Свободно для личного использования. Коммерческое использование и распространение без разрешения автора запрещены.
+MIT License. Copyright (c) 2026 Aleksei Ulianov / Sprut_AI.
 
 ---
 
@@ -332,7 +343,7 @@ openclaw gateway restart
 
 ## License
 
-© 2026 Aleksei Ulianov. Free for personal use. Commercial use and redistribution without author's permission is prohibited.
+MIT License. Copyright (c) 2026 Aleksei Ulianov / Sprut_AI.
 
 ---
 
