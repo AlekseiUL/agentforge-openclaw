@@ -12,7 +12,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 class Install(unittest.TestCase):
     def test_dry_run_install_repeat_and_fixture_rollback(self):
         with tempfile.TemporaryDirectory() as td:
-            home = pathlib.Path(td)
+            home = pathlib.Path(td).resolve()
             target = home / 'workspace'
             command = [sys.executable, str(ROOT/'scripts/install.py'), '--workspace', str(target)]
             def run(*args):
