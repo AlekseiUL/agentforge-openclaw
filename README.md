@@ -108,6 +108,13 @@ The agent learns from corrections and stops repeating errors.
 
 ## Installation
 
+For an additive installation without overwriting local edits or restarting a gateway:
+run `python3 scripts/install.py --workspace <workspace>` to preview, then add
+`--apply` after reviewing the paths. Existing files are preserved. Updates to an
+existing installation require a reviewed diff and a user-owned snapshot; there
+is no automatic destructive update or uninstall. The manual copy recipe below
+is for a new, empty destination only.
+
 ```bash
 # 1. Copy the skill
 mkdir -p <workspace>/skills/agent-forge/references
